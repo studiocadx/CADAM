@@ -37,7 +37,7 @@ const VALID_IMAGE_FORMATS = [
 
 function TextAreaChat({
   onSubmit,
-  placeholder = 'What can Adam help you build today?',
+  placeholder = 'What can CadxStudio help you build today?',
   disabled = false,
   model,
   setModel,

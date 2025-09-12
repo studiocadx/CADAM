@@ -539,10 +539,10 @@ Deno.serve(async (req) => {
                 let title =
                   objectTitleResult.status === 'fulfilled'
                     ? objectTitleResult.value
-                    : 'Adam Object';
+                    : 'CadxStudio Object';
                 const lower = title.toLowerCase();
                 if (lower.includes('sorry') || lower.includes('apologize'))
-                  title = 'Adam Object';
+                  title = 'CadxStudio Object';
 
                 if (!code) {
                   // mark tool as error
@@ -634,7 +634,7 @@ Deno.serve(async (req) => {
                 }
 
                 const artifact: ParametricArtifact = {
-                  title: content.artifact?.title || 'Adam Object',
+                  title: content.artifact?.title || 'CadxStudio Object',
                   version: content.artifact?.version || 'v1',
                   code: patchedCode,
                   parameters: parseParameters(patchedCode),

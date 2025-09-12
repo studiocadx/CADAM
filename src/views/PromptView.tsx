@@ -127,7 +127,7 @@ export function PromptView() {
                     id: newConversationId,
                     user_id: user?.id ?? '',
                   }}
-                  placeholder="Start building with Adam..."
+                  placeholder="Start building with CadxStudio..."
                   model={model}
                   setModel={setModel}
                 />

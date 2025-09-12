@@ -24,15 +24,15 @@ const Loader = ({ message }: Props) => {
     }, 2000);
 
     // CHANGE TAB TITLE
-    document.title = 'Loading model.';
+    document.title = 'CadxStudio - Loading model.';
 
     const titleInterval = setInterval(() => {
-      if (document.title === 'Loading model.') {
-        document.title = 'Loading model..';
-      } else if (document.title === 'Loading model..') {
-        document.title = 'Loading model...';
+      if (document.title === 'CadxStudio - Loading model.') {
+        document.title = 'CadxStudio - Loading model..';
+      } else if (document.title === 'CadxStudio - Loading model..') {
+        document.title = 'CadxStudio - Loading model...';
       } else {
-        document.title = 'Loading model.';
+        document.title = 'CadxStudio - Loading model.';
       }
     }, 300);
 
@@ -52,7 +52,7 @@ const Loader = ({ message }: Props) => {
     return () => {
       clearInterval(titleInterval);
       clearInterval(interval);
-      document.title = 'Adam';
+      document.title = 'CadxStudio';
     };
   }, [changingMessage]);
 

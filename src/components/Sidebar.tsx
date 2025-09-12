@@ -61,13 +61,13 @@ export function Sidebar({ isSidebarOpen }: SidebarProps) {
                 <div className="flex w-full">
                   <img
                     className="mx-auto h-8 w-full"
-                    src={`${import.meta.env.BASE_URL}/adam-logo-full.svg`}
+                    src={`${import.meta.env.BASE_URL}/cadxstudio-logo-full.svg`}
                     alt="Logo"
                   />
                 </div>
               ) : (
                 <img
-                  src={`${import.meta.env.BASE_URL}/adam-logo.svg`}
+                  src={`${import.meta.env.BASE_URL}/cadxstudio-logo.svg`}
                   alt="Logo"
                   className="h-8 w-8 min-w-8"
                 />
