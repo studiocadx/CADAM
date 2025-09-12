@@ -1,30 +1,23 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./public/Github-Banner-Dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="./public/Github-Banner-Light.png">
-    <img src="./public/Github-Banner-Light.png" alt="CADAM Banner" width="100%"/>
+    <source media="(prefers-color-scheme: dark)" srcset="./public/CadxStudio-Banner-Dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="./public/CadxStudio-Banner-Light.png">
+    <img src="./public/CadxStudio-Banner-Light.png" alt="CadxStudio Banner" width="100%"/>
   </picture>
 </div>
 
-<h1 align="center"> ⛮ The Open Source Text to CAD Web App ⛮ </h1>
+<h1 align="center"> ⛮ CadxStudio - The Open Source Text to CAD Web App ⛮ </h1>
 
 <div align="center">
 
-[![Stars](https://img.shields.io/github/stars/Adam-CAD/cadam?style=social&logo=github)](https://github.com/Adam-CAD/cadam/stargazers)
-[![Forks](https://img.shields.io/github/forks/Adam-CAD/CADAM?style=flat)](https://github.com/Adam-CAD/CADAM/network)
+[![Stars](https://img.shields.io/github/stars/CadxStudio/cadxstudio?style=social&logo=github)](https://github.com/CadxStudio/cadxstudio/stargazers)
+[![Forks](https://img.shields.io/github/forks/CadxStudio/cadxstudio?style=flat)](https://github.com/CadxStudio/cadxstudio/network)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-19.1-61DAFB.svg?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E.svg?style=flat&logo=supabase&logoColor=white)](https://supabase.com/)
 [![OpenSCAD](https://img.shields.io/badge/OpenSCAD-WASM-F9D64F.svg?style=flat)](https://openscad.org/)
-[![Website](https://img.shields.io/badge/website-adam.new-blue?style=flat)](https://adam.new)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.com/invite/HKdXDqAHCs)
-[![Follow Zach Dive](https://img.shields.io/badge/Follow-Zach%20Dive-1DA1F2?style=flat&logo=x&logoColor=white)](https://x.com/zachdive)
-[![Follow Aaron Li](https://img.shields.io/badge/Follow-Aaron%20Li-1DA1F2?style=flat&logo=x&logoColor=white)](https://x.com/aaronhetengli)
-[![Follow Dylan Anderson](https://img.shields.io/badge/Follow-tsadpbb-1DA1F2?style=flat&logo=x&logoColor=white)](https://x.com/tsadpbb)
-
-
-
+[![Website](https://img.shields.io/badge/website-cadxstudio.com-blue?style=flat)](https://cadxstudio.com)
 
 </div>
 
@@ -59,19 +52,19 @@
 ![Gear Example](./demo/gear-example.png)
 -->
 
-> 🎬 **Try it live:** https://adam.new/cadam
+> 🎬 **Try it live:** https://cadxstudio.com
 
 ## 📺 Screenshots
 
-<img src="./public/screenshot-2.jpeg" alt="CADAM Screenshot 2" />
+<img src="./public/screenshot-2.jpeg" alt="CadxStudio Screenshot 2" />
 
 <details>
   <summary>More screenshots</summary>
 
   <br/>
-  <img src="./public/screenshot-1.jpeg" alt="CADAM Screenshot 1" />
+  <img src="./public/screenshot-1.jpeg" alt="CadxStudio Screenshot 1" />
   <br/>
-  <img src="./public/screenshot-3.jpeg" alt="CADAM Screenshot 3" />
+  <img src="./public/screenshot-3.jpeg" alt="CadxStudio Screenshot 3" />
 
 </details>
 
@@ -79,8 +72,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/Adam-CAD/CADAM.git
-cd CADAM
+git clone https://github.com/CadxStudio/cadxstudio.git
+cd cadxstudio
 
 # Install dependencies
 npm install
@@ -115,14 +108,14 @@ npm run dev
 - Copy `supabase/functions/.env.template` to `supabase/functions/.env`
 - Update all required keys in `supabase/functions/.env`, including:
   ```
-  ANTHROPIC_API_KEY="<Test Anthropic API Key>"
+  ANTHROPIC_API_KEY="<Your Anthropic API Key>"
   ENVIRONMENT="local"
   NGROK_URL="<NGROK URL>" # Your ngrok tunnel URL, e.g., https://xxxx-xx-xx-xxx-xx.ngrok.io
   ```
 
 ## 🌐 Setting Up ngrok for Local Development
 
-CADAM uses ngrok to send image URLs to Anthropic:
+CadxStudio uses ngrok to send image URLs to Anthropic:
 
 1. Install ngrok if you haven't already:
 
@@ -208,7 +201,9 @@ Components and attributions:
   
 **⭐ If you find CADAM useful, please consider giving it a star!**
 
-[![Stars](https://img.shields.io/github/stars/Adam-CAD/cadam?style=social&logo=github)](https://github.com/Adam-CAD/cadam/stargazers)
+**⭐ If you find CadxStudio useful, please consider giving it a star!**
+
+[![Stars](https://img.shields.io/github/stars/CadxStudio/cadxstudio?style=social&logo=github)](https://github.com/CadxStudio/cadxstudio/stargazers)
 
 Made with 💙 for the 3D printing and CAD community
 

@@ -9,12 +9,12 @@ export function cn(...inputs: ClassValue[]) {
 export const PARAMETRIC_MODELS: ModelConfig[] = [
   {
     id: 'fast',
-    name: 'Adam',
+    name: 'CadxStudio',
     description: 'Fast responses, optimized for iterative part design',
   },
   {
     id: 'quality',
-    name: 'Adam Pro',
+    name: 'CadxStudio Pro',
     description: 'Enhanced capabilities takes longer to think',
   },
 ];
