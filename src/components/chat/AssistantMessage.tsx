@@ -83,18 +83,18 @@ export function AssistantMessage({
     <div className="flex justify-start">
       {message.role === 'assistant' && (
         <div className="mr-2 mt-1">
-          <Avatar className="h-9 w-9 border border-adam-neutral-700 bg-adam-neutral-950">
+          <Avatar className="h-9 w-9 border border-cadxstudio-neutral-700 bg-cadxstudio-neutral-950">
             <div style={{ padding: '0.6rem 0.5rem 0.5rem 0.55rem' }}>
               <AvatarImage
-                src={`${import.meta.env.BASE_URL}/adam-logo.svg`}
-                alt="Adam"
+                src={`${import.meta.env.BASE_URL}/cadxstudio-logo.svg`}
+                alt="CadxStudio"
               />
             </div>
           </Avatar>
         </div>
       )}
-      <div className="w-[80%] rounded-lg bg-adam-neutral-800">
-        <div className="flex flex-col gap-3 p-3 text-sm text-adam-text-primary">
+      <div className="w-[80%] rounded-lg bg-cadxstudio-neutral-800">
+        <div className="flex flex-col gap-3 p-3 text-sm text-cadxstudio-text-primary">
           {message.content.error ? (
             <span className="px-1">
               We ran into some trouble with your prompt
@@ -110,7 +110,7 @@ export function AssistantMessage({
                     {message.content.toolCalls.map((toolCall) => (
                       <div
                         key={toolCall.id ?? `${toolCall.name}`}
-                        className="flex h-10 w-full items-center justify-between overflow-hidden rounded-md bg-adam-neutral-950 px-3 hover:bg-adam-neutral-900"
+                        className="flex h-10 w-full items-center justify-between overflow-hidden rounded-md bg-cadxstudio-neutral-950 px-3 hover:bg-cadxstudio-neutral-900"
                       >
                         <div className="flex h-full items-center justify-center gap-2">
                           <Box className="h-4 w-4 text-white" />
@@ -201,6 +201,7 @@ export function AssistantMessage({
               )}
               {message.siblings.length > 1 && (
                 <div className="flex h-6 items-center gap-0.5 rounded-lg border border-adam-neutral-700 bg-adam-bg-secondary-dark">
+                <div className="flex h-6 items-center gap-0.5 rounded-lg border border-cadxstudio-neutral-700 bg-cadxstudio-bg-secondary-dark">
                   <Button
                     disabled={branchIndex === 0 || isLoading}
                     variant="outline"
@@ -210,9 +211,9 @@ export function AssistantMessage({
                     }}
                     className="h-full w-6 rounded-lg rounded-r-none border-none p-0"
                   >
-                    <ChevronLeft className="h-3 w-3 p-0 text-adam-neutral-100" />
+                    <ChevronLeft className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                   </Button>
-                  <span className="text-xs tracking-widest text-adam-neutral-100">
+                  <span className="text-xs tracking-widest text-cadxstudio-neutral-100">
                     {branchIndex + 1}/{message.siblings.length}
                   </span>
                   <Button
@@ -226,7 +227,7 @@ export function AssistantMessage({
                     }}
                     className="h-full w-6 rounded-lg rounded-l-none border-none p-0"
                   >
-                    <ChevronRight className="h-3 w-3 p-0 text-adam-neutral-100" />
+                    <ChevronRight className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                   </Button>
                 </div>
               )}
@@ -261,24 +262,24 @@ function ObjectButton({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={cn(
-        'group relative bg-black p-2 hover:bg-adam-bg-dark',
+        'group relative bg-black p-2 hover:bg-cadxstudio-bg-dark',
         currentMessage && currentMessage.id === message.id
-          ? 'border-adam-blue'
+          ? 'border-cadxstudio-blue'
           : 'border-gray-200/20 dark:border-gray-700',
       )}
       onClick={() => setCurrentMessage(message)}
     >
       <div className="flex w-full items-center justify-between border-gray-200/20 pr-16 dark:border-gray-700">
         <div className="flex items-center space-x-2">
-          <Box className="h-4 w-4 text-adam-text-primary" />
-          <span className="font-medium text-adam-text-primary">{title}</span>
+          <Box className="h-4 w-4 text-cadxstudio-text-primary" />
+          <span className="font-medium text-cadxstudio-text-primary">{title}</span>
         </div>
         <span
           className={cn(
-            'absolute right-2 flex h-6 items-center overflow-hidden rounded-md border border-adam-neutral-700 bg-adam-bg-secondary-dark px-1 text-xs transition-all duration-100 ease-in-out hover:bg-black',
+            'absolute right-2 flex h-6 items-center overflow-hidden rounded-md border border-cadxstudio-neutral-700 bg-cadxstudio-bg-secondary-dark px-1 text-xs transition-all duration-100 ease-in-out hover:bg-black',
             isHovered
-              ? 'w-14 text-adam-text-primary'
-              : `w-${6 + (currentVersion.toString().length - 1)} text-adam-neutral-300`,
+              ? 'w-14 text-cadxstudio-text-primary'
+              : `w-${6 + (currentVersion.toString().length - 1)} text-cadxstudio-neutral-300`,
           )}
         >
           {isHovered ? (
@@ -324,8 +325,8 @@ function RetryModelSelector({
         variant="outline"
         disabled={true}
         className={cn(
-          'h-6 w-fit gap-1 rounded-lg px-2 text-xs text-adam-text-primary opacity-50',
-          className,
+          'h-6 w-fit gap-1 rounded-lg px-2 text-xs text-cadxstudio-text-primary',
+          isOpen && 'bg-cadxstudio-neutral-800',
         )}
       >
         <span>{selectedModelConfig.name}</span>
@@ -355,14 +356,14 @@ function RetryModelSelector({
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-48 rounded-lg border border-adam-neutral-700 bg-adam-neutral-800 p-1"
+        className="w-48 rounded-lg border border-cadxstudio-neutral-700 bg-cadxstudio-neutral-800 p-1"
         align="start"
       >
         {availableModels.map((model) => (
           <DropdownMenuItem
             key={model.id}
             className={cn(
-              'cursor-pointer rounded-md bg-adam-neutral-800 px-2 py-1.5 text-xs text-adam-text-primary hover:bg-adam-neutral-700 focus:bg-adam-bg-secondary-dark',
+              'cursor-pointer rounded-md bg-cadxstudio-neutral-800 px-2 py-1.5 text-xs text-cadxstudio-text-primary hover:bg-cadxstudio-neutral-700 focus:bg-cadxstudio-bg-secondary-dark',
             )}
             onClick={() => {
               if (onRetry) {

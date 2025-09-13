@@ -238,10 +238,10 @@ export function HistoryView() {
 
   return (
     <>
-      <div className="flex h-full min-w-0 flex-1 flex-col bg-adam-background-1 pt-8 md:pt-0">
+      <div className="flex h-full min-w-0 flex-1 flex-col bg-cadxstudio-background-1 pt-8 md:pt-0">
         <div className="mx-auto w-full max-w-6xl px-6 pb-4 pt-10 md:px-20 md:py-4">
           <div className="flex items-center justify-between py-3">
-            <h1 className="flex items-center gap-2 px-2 text-2xl font-medium text-adam-neutral-10">
+            <h1 className="flex items-center gap-2 px-2 text-2xl font-medium text-cadxstudio-neutral-10">
               Past Creations
             </h1>
           </div>
@@ -250,7 +250,7 @@ export function HistoryView() {
               placeholder="Search generations..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="border-0 bg-adam-background-2 pl-6 text-base shadow-[inset_0_0_10px_0_rgba(0,0,0,0.32),0_0_0_2px_rgba(0,0,0,0)] ring-0 transition-shadow duration-300 ease-in-out hover:shadow-[inset_0_0_4px_0_rgba(0,0,0,0.16),0_0_0_2px_rgba(60,60,60,1)] focus:shadow-[inset_0_0_4px_0_rgba(0,0,0,0.16),0_0_0_2px_#00A6FF] focus:outline-none sm:text-sm"
+              className="border-0 bg-cadxstudio-background-2 pl-6 text-base shadow-[inset_0_0_10px_0_rgba(0,0,0,0.32),0_0_0_2px_rgba(0,0,0,0)] ring-0 transition-shadow duration-300 ease-in-out hover:shadow-[inset_0_0_4px_0_rgba(0,0,0,0.16),0_0_0_2px_rgba(60,60,60,1)] focus:shadow-[inset_0_0_4px_0_rgba(0,0,0,0.16),0_0_0_2px_#00A6FF] focus:outline-none sm:text-sm"
             />
           </div>
         </div>
@@ -310,7 +310,7 @@ export function HistoryView() {
                   return (
                     <div key={date} className="space-y-2">
                       {dateString && (
-                        <h2 className="bg-adam-background-1 px-3 py-2 text-sm font-medium text-adam-neutral-100">
+                        <h2 className="bg-cadxstudio-background-1 px-3 py-2 text-sm font-medium text-cadxstudio-neutral-100">
                           {dateString}
                         </h2>
                       )}
@@ -350,7 +350,7 @@ export function HistoryView() {
         type="button"
         aria-label="Create new item"
         onClick={() => navigate('/')}
-        className="fixed bottom-8 right-8 flex h-14 w-14 items-center justify-center rounded-full bg-adam-neutral-100 text-adam-neutral-950 shadow-[0_4px_32px_rgba(0,0,0,0.48)] md:hidden"
+        className="fixed bottom-8 right-8 flex h-14 w-14 items-center justify-center rounded-full bg-cadxstudio-neutral-100 text-cadxstudio-neutral-950 shadow-[0_4px_32px_rgba(0,0,0,0.48)] md:hidden"
       >
         <Plus className="h-10 w-10 stroke-[2px]" />
       </button>

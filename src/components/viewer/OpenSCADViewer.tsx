@@ -60,7 +60,7 @@ export function OpenSCADViewer() {
     conversation.current_message_leaf_id === currentMessage?.id;
 
   return (
-    <div className="h-full w-full bg-adam-neutral-700/50 shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out">
+    <div className="h-full w-full bg-cadxstudio-neutral-700/50 shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out">
       <div className="h-full w-full">
         {geometry ? (
           <div className="h-full w-full">
@@ -79,10 +79,10 @@ export function OpenSCADViewer() {
           </>
         )}
         {isCompiling && (
-          <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-adam-neutral-700/30 backdrop-blur-sm">
+          <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-cadxstudio-neutral-700/30 backdrop-blur-sm">
             <div className="flex flex-col items-center gap-3">
-              <Loader2 className="h-6 w-6 animate-spin text-adam-blue" />
-              <p className="text-xs font-medium text-adam-text-primary/70">
+              <Loader2 className="h-6 w-6 animate-spin text-cadxstudio-blue" />
+              <p className="text-xs font-medium text-cadxstudio-text-primary/70">
                 Compiling...
               </p>
             </div>
@@ -104,14 +104,14 @@ function FixWithAIButton({
     <div className="flex h-full flex-col items-center justify-center gap-4 p-6">
       <div className="flex flex-col items-center gap-3">
         <div className="relative">
-          <div className="absolute inset-0 animate-ping rounded-full bg-adam-blue/20" />
-          <CircleAlert className="h-8 w-8 text-adam-blue" />
+          <div className="absolute inset-0 animate-ping rounded-full bg-cadxstudio-blue/20" />
+          <CircleAlert className="h-8 w-8 text-cadxstudio-blue" />
         </div>
         <div className="text-center">
-          <p className="text-sm font-medium text-adam-blue">
+          <p className="text-sm font-medium text-cadxstudio-blue">
             Error Compiling Model
           </p>
-          <p className="mt-1 text-xs text-adam-text-primary/60">
+          <p className="mt-1 text-xs text-cadxstudio-text-primary/60">
             CadxStudio encountered an error while compiling
           </p>
         </div>
@@ -121,12 +121,12 @@ function FixWithAIButton({
           variant="ghost"
           className={cn(
             'group relative flex items-center gap-2 rounded-lg border',
-            'bg-gradient-to-br from-adam-blue/20 to-adam-neutral-800/70 p-3',
-            'border-adam-blue/30 text-adam-text-primary',
+            'bg-gradient-to-br from-cadxstudio-blue/20 to-cadxstudio-neutral-800/70 p-3',
+            'border-cadxstudio-blue/30 text-cadxstudio-text-primary',
             'transition-all duration-300 ease-in-out',
-            'hover:border-adam-blue/70 hover:bg-adam-blue/50 hover:text-white',
+            'hover:border-cadxstudio-blue/70 hover:bg-cadxstudio-blue/50 hover:text-white',
             'hover:shadow-[0_0_25px_rgba(249,115,184,0.4)]',
-            'focus:outline-none focus:ring-2 focus:ring-adam-blue/30',
+            'focus:outline-none focus:ring-2 focus:ring-cadxstudio-blue/30',
           )}
           onClick={() => {
             if (error && error.name === 'OpenSCADError') {
@@ -134,7 +134,7 @@ function FixWithAIButton({
             }
           }}
         >
-          <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-adam-blue/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cadxstudio-blue/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           <Wrench className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
           <span className="relative text-sm font-medium">Fix with AI</span>
         </Button>

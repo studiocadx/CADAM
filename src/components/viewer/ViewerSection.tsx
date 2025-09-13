@@ -9,7 +9,7 @@ export function ViewerSection() {
   const { currentMessage: message } = useCurrentMessage();
 
   return (
-    <div className="flex h-full w-full items-center justify-center bg-adam-neutral-700">
+    <div className="flex h-full w-full items-center justify-center bg-cadxstudio-neutral-700">
       {isLoading ? (
         <div className="flex h-full items-center justify-center">
           <Loader message="Generating model" />

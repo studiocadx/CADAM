@@ -28,7 +28,7 @@ export function OrthographicPerspectiveToggle({
           </TooltipTrigger>
           <TooltipContent
             side="top"
-            className="border-adam-neutral-700 bg-adam-background-2 text-adam-text-primary"
+            className="border-cadxstudio-neutral-700 bg-cadxstudio-background-2 text-cadxstudio-text-primary"
           >
             <p>Perspective View</p>
           </TooltipContent>
@@ -38,7 +38,7 @@ export function OrthographicPerspectiveToggle({
       <Switch
         checked={isOrthographic}
         onCheckedChange={onToggle}
-        className="data-[state=checked]:bg-adam-blue"
+        className="data-[state=checked]:bg-cadxstudio-blue"
       />
 
       <TooltipProvider delayDuration={300}>
@@ -50,7 +50,7 @@ export function OrthographicPerspectiveToggle({
           </TooltipTrigger>
           <TooltipContent
             side="top"
-            className="border-adam-neutral-700 bg-adam-background-2 text-adam-text-primary"
+            className="border-cadxstudio-neutral-700 bg-cadxstudio-background-2 text-cadxstudio-text-primary"
           >
             <p>Orthographic View</p>
           </TooltipContent>

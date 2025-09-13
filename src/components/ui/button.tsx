@@ -10,28 +10,29 @@ const buttonVariants = cva(
     variants: {
       variant: {
         black:
-          'bg-adam-neutral-950 text-adam-neutral-10 hover:bg-adam-neutral-900 duration-150 ease-out',
+          'bg-cadxstudio-neutral-950 text-cadxstudio-neutral-10 hover:bg-cadxstudio-neutral-900 duration-150 ease-out',
         dark: 'bg-adam-neutral-700 text-adam-text-primary hover:bg-adam-neutral-800 duration-150 ease-out',
+        dark: 'bg-cadxstudio-neutral-700 text-cadxstudio-text-primary hover:bg-cadxstudio-neutral-800 duration-150 ease-out',
         light:
-          'bg-adam-neutral-10 text-adam-neutral-950 hover:bg-adam-neutral-100 duration-150 ease-out',
+          'bg-cadxstudio-neutral-10 text-cadxstudio-neutral-950 hover:bg-cadxstudio-neutral-100 duration-150 ease-out',
         default:
-          'bg-adam-background-2 text-adam-text-primary shadow hover:bg-adam-neutral-800 hover:text-adam-neutral-100',
+          'bg-cadxstudio-background-2 text-cadxstudio-text-primary shadow hover:bg-cadxstudio-neutral-800 hover:text-cadxstudio-neutral-100',
         destructive:
           'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
         outline:
-          'border border-adam-neutral-700 bg-adam-bg-secondary-dark text-adam-text-primary shadow-sm hover:bg-adam-neutral-800 hover:text-adam-neutral-100',
+          'border border-cadxstudio-neutral-700 bg-cadxstudio-bg-secondary-dark text-cadxstudio-text-primary shadow-sm hover:bg-cadxstudio-neutral-800 hover:text-cadxstudio-neutral-100',
         secondary:
           'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         onboarding:
-          'bg-adam-neutral-900 hover:bg-adam-neutral-950 text-adam-neutral-10 font-light px-4',
+          'bg-cadxstudio-neutral-900 hover:bg-cadxstudio-neutral-950 text-cadxstudio-neutral-10 font-light px-4',
         link: 'text-primary underline-offset-4 hover:underline',
-        adam_dark:
-          'text-adam-text-tertiary border-2 border-transparent transition-all duration-200 ease-in-out [@media(hover:hover)]:hover:bg-adam-neutral-950 [@media(hover:hover)]:hover:text-adam-neutral-10',
-        adam_dark_collapsed:
-          'text-adam-text-tertiary border-2 border-transparent transition-all duration-200 ease-in-out [@media(hover:hover)]:hover:bg-adam-neutral-950 [@media(hover:hover)]:hover:text-adam-neutral-10',
-        adam_dark_collapsed_avatar:
-          'text-adam-text-tertiary border-2 border-transparent transition-all duration-200 ease-in-out [@media(hover:hover)]:hover:bg-adam-neutral-950',
+        cadxstudio_dark:
+          'text-cadxstudio-text-tertiary border-2 border-transparent transition-all duration-200 ease-in-out [@media(hover:hover)]:hover:bg-cadxstudio-neutral-950 [@media(hover:hover)]:hover:text-cadxstudio-neutral-10',
+        cadxstudio_dark_collapsed:
+          'text-cadxstudio-text-tertiary border-2 border-transparent transition-all duration-200 ease-in-out [@media(hover:hover)]:hover:bg-cadxstudio-neutral-950 [@media(hover:hover)]:hover:text-cadxstudio-neutral-10',
+        cadxstudio_dark_collapsed_avatar:
+          'text-cadxstudio-text-tertiary border-2 border-transparent transition-all duration-200 ease-in-out [@media(hover:hover)]:hover:bg-cadxstudio-neutral-950',
       },
       size: {
         default: 'h-9 px-4 py-2',

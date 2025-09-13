@@ -63,7 +63,7 @@ export function ImageViewer({
     return (
       <div
         className={cn(
-          'flex aspect-square w-full items-center justify-center rounded-lg text-adam-text-primary',
+          'flex aspect-square w-full items-center justify-center rounded-lg text-cadxstudio-text-primary',
           className,
         )}
       >
@@ -76,7 +76,7 @@ export function ImageViewer({
     return (
       <div
         className={cn(
-          'flex aspect-square h-full w-full items-center justify-center rounded-lg text-adam-text-primary',
+          'flex aspect-square h-full w-full items-center justify-center rounded-lg text-cadxstudio-text-primary',
           className,
         )}
       >

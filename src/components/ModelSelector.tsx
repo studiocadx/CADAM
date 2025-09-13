@@ -101,13 +101,14 @@ export function ModelSelector({
           variant="ghost"
           className={cn(
             'flex h-8 w-auto items-center gap-1.5 rounded-lg px-3 text-sm transition-all duration-200 hover:border-[#333333] hover:bg-adam-neutral-800',
+            'flex h-8 w-auto items-center gap-1.5 rounded-lg px-3 text-sm transition-all duration-200 hover:border-[#333333] hover:bg-cadxstudio-neutral-800',
             focused
               ? 'text-white hover:text-white'
-              : 'text-adam-text-secondary hover:text-adam-text-primary',
+              : 'text-cadxstudio-text-secondary hover:text-cadxstudio-text-primary',
             isDropdownOpen &&
               (focused
-                ? 'bg-adam-neutral-800 text-white'
-                : 'bg-adam-neutral-800 text-adam-text-primary'),
+                ? 'bg-cadxstudio-neutral-800 text-white'
+                : 'bg-cadxstudio-neutral-800 text-cadxstudio-text-primary'),
             className,
           )}
           disabled={!!disabled}
@@ -148,7 +149,7 @@ export function ModelSelector({
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="flex w-64 flex-col gap-1 rounded-lg bg-adam-neutral-700 p-1"
+        className="flex w-64 flex-col gap-1 rounded-lg bg-cadxstudio-neutral-700 p-1"
         align="end"
         // Radix fires this just before it tries to refocus the trigger.
         // We intercept the event: if the menu was opened with a pointer we
@@ -167,8 +168,8 @@ export function ModelSelector({
           <DropdownMenuItem
             key={model.id}
             className={cn(
-              'cursor-pointer rounded-md bg-adam-neutral-700 px-4 py-3 transition-colors duration-150 focus:bg-adam-bg-secondary-dark',
-              selectedModel === model.id && 'bg-adam-neutral-800',
+              'cursor-pointer rounded-md bg-cadxstudio-neutral-700 px-4 py-3 transition-colors duration-150 focus:bg-cadxstudio-bg-secondary-dark',
+              selectedModel === model.id && 'bg-cadxstudio-neutral-800',
             )}
             onClick={(event) => {
               onModelChange(model.id);
@@ -181,7 +182,7 @@ export function ModelSelector({
                 <span
                   className={cn(
                     'font-medium',
-                    focused ? 'text-white' : 'text-adam-text-primary',
+                    focused ? 'text-white' : 'text-cadxstudio-text-primary',
                   )}
                 >
                   {model.name}

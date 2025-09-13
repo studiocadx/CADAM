@@ -220,7 +220,7 @@ export function ParametricEditor() {
             <div className="absolute left-1 top-1/2 z-50 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
               <Button
                 variant="ghost"
-                className="rounded-l-none rounded-r-lg border-b border-r border-t border-gray-200/20 bg-adam-bg-secondary-dark p-2 text-adam-text-primary transition-colors dark:border-gray-800 [@media(hover:hover)]:hover:bg-adam-neutral-950 [@media(hover:hover)]:hover:text-adam-neutral-10"
+                className="rounded-l-none rounded-r-lg border-b border-r border-t border-gray-200/20 bg-cadxstudio-bg-secondary-dark p-2 text-cadxstudio-text-primary transition-colors dark:border-gray-800 [@media(hover:hover)]:hover:bg-cadxstudio-neutral-950 [@media(hover:hover)]:hover:text-cadxstudio-neutral-10"
                 onClick={handleChatCollapse}
               >
                 <ChevronsRight className="h-5 w-5 rotate-180" />
@@ -232,7 +232,7 @@ export function ParametricEditor() {
               <Button
                 aria-label="Expand chat panel"
                 onClick={handleChatExpand}
-                className="flex h-[100px] w-9 flex-col items-center rounded-l-none rounded-r-lg bg-adam-bg-secondary-dark px-1.5 py-2 text-adam-text-primary"
+                className="flex h-[100px] w-9 flex-col items-center rounded-l-none rounded-r-lg bg-cadxstudio-bg-secondary-dark px-1.5 py-2 text-cadxstudio-text-primary"
               >
                 <ChevronsRight className="h-5 w-5 text-white" />
                 <div className="flex flex-1 items-center justify-center">
@@ -265,7 +265,7 @@ export function ParametricEditor() {
                 <div className="absolute right-1 top-1/2 z-50 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
                   <Button
                     variant="ghost"
-                    className="rounded-l-lg rounded-r-none border-b border-l border-t border-gray-200/20 bg-adam-bg-secondary-dark p-2 text-adam-text-primary transition-colors dark:border-gray-800 [@media(hover:hover)]:hover:bg-adam-neutral-950 [@media(hover:hover)]:hover:text-adam-neutral-10"
+                    className="rounded-l-lg rounded-r-none border-b border-l border-t border-gray-200/20 bg-cadxstudio-bg-secondary-dark p-2 text-cadxstudio-text-primary transition-colors dark:border-gray-800 [@media(hover:hover)]:hover:bg-cadxstudio-neutral-950 [@media(hover:hover)]:hover:text-cadxstudio-neutral-10"
                     onClick={handleParametersCollapse}
                   >
                     <ChevronsRight className="h-5 w-5" />
@@ -277,7 +277,7 @@ export function ParametricEditor() {
                   <Button
                     aria-label="Expand parameters panel"
                     onClick={handleParametersExpand}
-                    className="flex h-[140px] w-9 flex-col items-center rounded-l-lg rounded-r-none bg-adam-bg-secondary-dark p-2 px-1.5 py-2 text-adam-text-primary"
+                    className="flex h-[140px] w-9 flex-col items-center rounded-l-lg rounded-r-none bg-cadxstudio-bg-secondary-dark p-2 px-1.5 py-2 text-cadxstudio-text-primary"
                   >
                     <ChevronsRight className="mb-3 h-5 w-5 rotate-180 text-white" />
                     <div className="flex flex-1 items-center justify-center">

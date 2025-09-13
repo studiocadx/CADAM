@@ -439,7 +439,7 @@ function TextAreaChat({
                   ? 'h-20 border-[#FF2D92] bg-[rgba(255,44,145,0.24)] opacity-100' // Hot-pink, full height
                   : 'h-20 border-[#B83C78] bg-[rgba(255,44,145,0.12)] opacity-100' // Intermediate, full height
                 : images.length > 0
-                  ? 'h-20 border-adam-neutral-700 bg-adam-neutral-950 opacity-100'
+                  ? 'h-20 border-cadxstudio-neutral-700 bg-cadxstudio-neutral-950 opacity-100'
                   : 'h-0 border-transparent bg-transparent opacity-0',
         )}
         onDragEnter={(event) => {
@@ -551,7 +551,7 @@ function TextAreaChat({
                           onClick={() => handleImageRemoved(image)}
                           disabled={image.isUploading}
                           className={cn(
-                            'absolute right-[-0.50rem] top-[-0.50rem] rounded-full border border-adam-neutral-500 bg-adam-neutral-500 text-white transition-colors duration-200 hover:border-adam-neutral-700 hover:bg-adam-neutral-700',
+                            'absolute right-[-0.50rem] top-[-0.50rem] rounded-full border border-cadxstudio-neutral-500 bg-cadxstudio-neutral-500 text-white transition-colors duration-200 hover:border-cadxstudio-neutral-700 hover:bg-cadxstudio-neutral-700',
                             image.isUploading && 'opacity-50',
                           )}
                         >
@@ -571,9 +571,9 @@ function TextAreaChat({
         className={cn(
           'relative rounded-2xl border-2',
           isFocused
-            ? 'border-adam-blue shadow-[inset_0px_0px_8px_0px_rgba(0,0,0,0.08)]'
-            : 'border-adam-neutral-700 shadow-[inset_0px_0px_8px_0px_rgba(0,0,0,0.08)] hover:border-adam-neutral-400',
-          'bg-adam-background-2 transition-all duration-300',
+            ? 'border-cadxstudio-blue shadow-[inset_0px_0px_8px_0px_rgba(0,0,0,0.08)]'
+            : 'border-cadxstudio-neutral-700 shadow-[inset_0px_0px_8px_0px_rgba(0,0,0,0.08)] hover:border-cadxstudio-neutral-400',
+          'bg-cadxstudio-background-2 transition-all duration-300',
         )}
         onDragEnter={(event) => {
           if (isDragging) {
@@ -600,8 +600,8 @@ function TextAreaChat({
           <Avatar className="h-8 w-8">
             <div className="h-full w-full p-1.5">
               <img
-                src={`${import.meta.env.BASE_URL}/Adam-Logo.png`}
-                alt="Adam Logo"
+                src={`${import.meta.env.BASE_URL}/cadxstudio-logo.svg`}
+                alt="CadxStudio Logo"
                 className="h-full w-full object-contain"
               />
             </div>
@@ -620,7 +620,7 @@ function TextAreaChat({
                 setInput(e.target.value);
               }}
               placeholder={placeholderAnim}
-              className="hide-scrollbar z-40 block h-auto min-h-0 w-full resize-none overflow-hidden whitespace-pre-line break-words border-none bg-adam-neutral-800 bg-transparent px-3 py-2 text-base text-adam-text-primary outline-none transition-all duration-500 placeholder:text-adam-text-secondary placeholder:opacity-[var(--placeholder-opacity)] placeholder:transition-all placeholder:duration-300 placeholder:ease-in-out hover:placeholder:blur-[0.2px] focus:border-0 focus:shadow-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 dark:text-gray-200 sm:px-4 sm:text-sm"
+              className="hide-scrollbar z-40 block h-auto min-h-0 w-full resize-none overflow-hidden whitespace-pre-line break-words border-none bg-cadxstudio-neutral-800 bg-transparent px-3 py-2 text-base text-cadxstudio-text-primary outline-none transition-all duration-500 placeholder:text-cadxstudio-text-secondary placeholder:opacity-[var(--placeholder-opacity)] placeholder:transition-all placeholder:duration-300 placeholder:ease-in-out hover:placeholder:blur-[0.2px] focus:border-0 focus:shadow-none focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 dark:text-gray-200 sm:px-4 sm:text-sm"
               style={
                 {
                   '--placeholder-opacity': placeholderOpacity,
@@ -638,7 +638,7 @@ function TextAreaChat({
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-[#2a2a2a] p-3">
+        <div className="flex items-center justify-between border-t border-cadxstudio-neutral-700 p-3">
           <div className="flex items-center gap-3">
             <div
               className={cn(
@@ -648,7 +648,7 @@ function TextAreaChat({
             >
               <Button
                 variant="outline"
-                className="flex h-8 w-8 items-center gap-2 rounded-lg border border-[#2a2a2a] bg-adam-background-2 p-0 text-sm text-adam-text-secondary hover:bg-adam-bg-secondary-dark"
+                className="flex h-8 w-8 items-center gap-2 rounded-lg border border-cadxstudio-neutral-700 bg-cadxstudio-background-2 p-0 text-sm text-cadxstudio-text-secondary hover:bg-cadxstudio-bg-secondary-dark"
                 onClick={(e) => {
                   e.stopPropagation();
                   const input = document.createElement('input');
@@ -682,7 +682,7 @@ function TextAreaChat({
                 handleSubmit();
               }}
               className={cn(
-                'flex h-8 w-8 transform items-center justify-center rounded-lg bg-adam-neutral-700 p-1 text-white transition-all duration-300 hover:scale-105 hover:bg-adam-blue/90 disabled:opacity-50 disabled:hover:scale-100 disabled:hover:bg-adam-blue',
+                'flex h-8 w-8 transform items-center justify-center rounded-lg bg-cadxstudio-neutral-700 p-1 text-white transition-all duration-300 hover:scale-105 hover:bg-cadxstudio-blue/90 disabled:opacity-50 disabled:hover:scale-100 disabled:hover:bg-cadxstudio-blue',
                 images.some((img) => img.isUploading) && 'opacity-50',
               )}
               disabled={

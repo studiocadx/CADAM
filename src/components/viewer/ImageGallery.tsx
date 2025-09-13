@@ -121,7 +121,7 @@ export function ImageGallery({ imageIds }: { imageIds: string[] }) {
           )}
         </Carousel>
         {/* Image counter */}
-        <div className="text-sm text-adam-text-secondary">
+        <div className="text-sm text-cadxstudio-text-secondary">
           {currentMessageIndex + 1} / {imageIds.length}
         </div>
       </div>

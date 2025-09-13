@@ -97,7 +97,7 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
     <div className="flex justify-start">
       {message.role === 'user' && (
         <div className="mr-2 mt-1">
-          <UserAvatar className="h-9 w-9 border border-adam-neutral-700 bg-adam-neutral-950 p-0" />
+          <UserAvatar className="h-9 w-9 border border-cadxstudio-neutral-700 bg-cadxstudio-neutral-950 p-0" />
         </div>
       )}
       <div
@@ -106,22 +106,22 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
         className="relative flex flex-col gap-1"
       >
         {message.content.error ? (
-          <div className="rounded-lg bg-adam-bg-secondary-dark">
+          <div className="rounded-lg bg-cadxstudio-bg-secondary-dark">
             <div
               className={cn(
                 'group relative flex items-center gap-2 rounded-lg border',
-                'bg-gradient-to-br from-adam-blue/20 to-adam-neutral-800/70 p-3',
-                'border-adam-blue/30 text-adam-text-primary',
+                'bg-gradient-to-br from-cadxstudio-blue/20 to-cadxstudio-neutral-800/70 p-3',
+                'border-cadxstudio-blue/30 text-cadxstudio-text-primary',
                 'transition-all duration-300 ease-in-out',
-                'hover:border-adam-blue/30 hover:bg-adam-blue/20 hover:text-white',
-                'focus:outline-none focus:ring-2 focus:ring-adam-blue/20',
+                'hover:border-cadxstudio-blue/30 hover:bg-cadxstudio-blue/20 hover:text-white',
+                'focus:outline-none focus:ring-2 focus:ring-cadxstudio-blue/20',
               )}
             >
               <Wrench className="h-4 w-4 transition-all duration-300 group-hover:rotate-12" />
               <span className="text-xs">Fix with AI</span>
             </div>
             {hovering && message.siblings.length > 1 && (
-              <div className="absolute bottom-[-1.5rem] right-2 flex items-center gap-0.5 rounded-sm border border-adam-neutral-700 bg-adam-bg-secondary-dark p-0.5">
+              <div className="absolute bottom-[-1.5rem] right-2 flex items-center gap-0.5 rounded-sm border border-cadxstudio-neutral-700 bg-cadxstudio-bg-secondary-dark p-0.5">
                 <BranchNavigation
                   branches={message.siblings}
                   branchIndex={branchIndex}
@@ -141,7 +141,7 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
               <div
                 className={cn(
                   'relative grid w-fit rounded-lg text-white',
-                  (hovering || message.content.images) && 'bg-adam-neutral-800',
+                  (hovering || message.content.images) && 'bg-cadxstudio-neutral-800',
                 )}
               >
                 {isEditing && (
@@ -151,7 +151,7 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
                     onChange={(e) => {
                       setInput(e.target.value);
                     }}
-                    className="block h-auto min-h-0 w-full resize-none overflow-hidden whitespace-pre-line break-words border-none bg-adam-neutral-800 px-3 py-2 text-sm sm:px-4"
+                    className="block h-auto min-h-0 w-full resize-none overflow-hidden whitespace-pre-line break-words border-none bg-cadxstudio-neutral-800 px-3 py-2 text-sm sm:px-4"
                     rows={1}
                     style={{ gridArea: '1 / -1' }}
                   />
@@ -170,7 +170,7 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
             {((hovering &&
               (message.content.text || message.siblings.length > 1)) ||
               isEditing) && (
-              <div className="absolute bottom-[-1.5rem] right-2 flex items-center gap-0.5 rounded-sm border border-adam-neutral-700 bg-adam-bg-secondary-dark p-0.5">
+              <div className="absolute bottom-[-1.5rem] right-2 flex items-center gap-0.5 rounded-sm border border-cadxstudio-neutral-700 bg-cadxstudio-bg-secondary-dark p-0.5">
                 {!isEditing ? (
                   <>
                     <Tooltip>
@@ -182,21 +182,21 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
                             'h-6 w-6 rounded-sm p-0',
                             isLoading
                               ? 'cursor-not-allowed opacity-50'
-                              : 'hover:bg-adam-neutral-800',
+                              : 'hover:bg-cadxstudio-neutral-800',
                           )}
                           onClick={() => {
                             setIsEditing(true);
                           }}
                           disabled={isLoading}
                         >
-                          <Pencil className="h-3 w-3 p-0 text-adam-neutral-100" />
+                          <Pencil className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                         </Button>
                       </TooltipTrigger>
                       <TooltipContent>Edit</TooltipContent>
                     </Tooltip>
                     <Separator
                       orientation="vertical"
-                      className="h-4 bg-adam-neutral-700"
+                      className="h-4 bg-cadxstudio-neutral-700"
                     />
                     {message.content.text && (
                       <Tooltip>
@@ -204,13 +204,13 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
                           <Button
                             variant="ghost"
                             size="icon"
-                            className="h-6 w-6 rounded-sm p-0 hover:bg-adam-neutral-800"
+                            className="h-6 w-6 rounded-sm p-0 hover:bg-cadxstudio-neutral-800"
                             onClick={handleCopy}
                           >
                             {copied ? (
-                              <Check className="h-3 w-3 p-0 text-adam-neutral-100" />
+                              <Check className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                             ) : (
-                              <Copy className="h-3 w-3 p-0 text-adam-neutral-100" />
+                              <Copy className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                             )}
                           </Button>
                         </TooltipTrigger>
@@ -221,7 +221,7 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
                       <>
                         <Separator
                           orientation="vertical"
-                          className="h-4 bg-adam-neutral-700"
+                          className="h-4 bg-cadxstudio-neutral-700"
                         />
                         <BranchNavigation
                           branches={message.siblings}
@@ -239,21 +239,21 @@ export function UserMessage({ message, isLoading }: UserMessageProps) {
                       variant="ghost"
                       size="icon"
                       onClick={handleEdit}
-                      className="h-6 w-6 rounded-sm p-0 hover:bg-adam-blue"
+                      className="h-6 w-6 rounded-sm p-0 hover:bg-cadxstudio-blue"
                     >
-                      <Check className="h-3 w-3 p-0 text-adam-neutral-100" />
+                      <Check className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                     </Button>
                     <Separator
                       orientation="vertical"
-                      className="h-4 bg-adam-neutral-700"
+                      className="h-4 bg-cadxstudio-neutral-700"
                     />
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-6 w-6 rounded-sm p-0 hover:bg-adam-neutral-800"
+                      className="h-6 w-6 rounded-sm p-0 hover:bg-cadxstudio-neutral-800"
                       onClick={handleCancel}
                     >
-                      <X className="h-3 w-3 p-0 text-adam-neutral-100" />
+                      <X className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
                     </Button>
                   </>
                 )}
@@ -288,26 +288,26 @@ function BranchNavigation({
         disabled={branchIndex === 0 || isLoading}
         variant="ghost"
         size="icon"
-        className="h-6 w-6 rounded-sm p-0 hover:bg-adam-neutral-800"
+        className="h-6 w-6 rounded-sm p-0 hover:bg-cadxstudio-neutral-800"
         onClick={() => {
           changeLeaf(leafNodes[branchIndex - 1].id);
         }}
       >
-        <ChevronLeft className="h-3 w-3 p-0 text-adam-neutral-100" />
+        <ChevronLeft className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
       </Button>
-      <span className="text-xs tracking-widest text-adam-neutral-100">
+      <span className="text-xs tracking-widest text-cadxstudio-neutral-100">
         {branchIndex + 1}/{branches.length}
       </span>
       <Button
         disabled={branchIndex === branches.length - 1 || isLoading}
         variant="ghost"
         size="icon"
-        className="h-6 w-6 rounded-sm p-0 hover:bg-adam-neutral-800"
+        className="h-6 w-6 rounded-sm p-0 hover:bg-cadxstudio-neutral-800"
         onClick={() => {
           changeLeaf(leafNodes[branchIndex + 1].id);
         }}
       >
-        <ChevronRight className="h-3 w-3 p-0 text-adam-neutral-100" />
+        <ChevronRight className="h-3 w-3 p-0 text-cadxstudio-neutral-100" />
       </Button>
     </div>
   );
@@ -363,7 +363,7 @@ export function UserMessageImagesViewer({ message }: { message: Message }) {
               'aspect-square cursor-pointer',
               currentMessage?.id === message.id &&
                 currentMessage?.content.index === index &&
-                'outline outline-2 outline-adam-blue',
+                'outline outline-2 outline-cadxstudio-blue',
             )}
           />
         </div>

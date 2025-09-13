@@ -33,8 +33,8 @@ export default function App() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-adam-bg-secondary-dark">
-        <Loader2 className="h-8 w-8 animate-spin text-adam-blue" />
+      <div className="flex min-h-screen items-center justify-center bg-cadxstudio-bg-secondary-dark">
+        <Loader2 className="h-8 w-8 animate-spin text-cadxstudio-blue" />
       </div>
     );
   }
@@ -48,12 +48,12 @@ export default function App() {
       ) : (
         <div className="flex h-dvh transition-all ease-in-out">
           <Sidebar isSidebarOpen={isSidebarOpen} />
-          <div className="relative flex-1 overflow-auto bg-adam-bg-dark">
+          <div className="relative flex-1 overflow-auto bg-cadxstudio-bg-dark">
             {/* Toggle Sidebar Button - Positioned on main content area */}
             <Button
               variant="ghost"
               size="icon"
-              className={`bg-adam-neutral-3000 fixed z-10 h-7 w-7 rounded-md text-gray-400 transition-all duration-300 [@media(hover:hover)]:hover:bg-adam-neutral-950 [@media(hover:hover)]:hover:text-adam-neutral-10 ${
+              className={`bg-cadxstudio-neutral-3000 fixed z-10 h-7 w-7 rounded-md text-gray-400 transition-all duration-300 [@media(hover:hover)]:hover:bg-cadxstudio-neutral-950 [@media(hover:hover)]:hover:text-cadxstudio-neutral-10 ${
                 isSidebarOpen ? 'left-[272px]' : 'left-20'
               } ${
                 location.pathname === '/' && isSidebarOpen
@@ -64,7 +64,7 @@ export default function App() {
             >
               <PanelLeft className="h-4 w-4" />
             </Button>
-            <div className="h-full bg-adam-bg-dark">
+            <div className="h-full bg-cadxstudio-bg-dark">
               <Outlet context={{ isSidebarOpen }} />
             </div>
           </div>

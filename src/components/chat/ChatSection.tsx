@@ -66,7 +66,7 @@ export function ChatSection({ messages }: ChatSectionProps) {
   );
 
   return (
-    <div className="flex h-full w-full flex-col items-center overflow-hidden border-r border-neutral-700 bg-adam-bg-secondary-dark dark:border-gray-800">
+    <div className="flex h-full w-full flex-col items-center overflow-hidden border-r border-neutral-700 bg-cadxstudio-bg-secondary-dark dark:border-gray-800">
       <div className="flex w-full items-center justify-between bg-transparent p-3 pl-12 dark:border-gray-800">
         <div className="flex min-w-0 flex-1 items-center space-x-2">
           <div className="min-w-0 flex-1">
@@ -78,7 +78,7 @@ export function ChatSection({ messages }: ChatSectionProps) {
         className="relative w-full max-w-xl flex-1 px-2 py-0"
         ref={scrollAreaRef}
       >
-        <div className="pointer-events-none sticky left-0 top-0 z-50 mr-4 h-3 bg-gradient-to-b from-adam-bg-secondary-dark/90 to-transparent" />
+        <div className="pointer-events-none sticky left-0 top-0 z-50 mr-4 h-3 bg-gradient-to-b from-cadxstudio-bg-secondary-dark/90 to-transparent" />
         <div className="space-y-4 pb-6">
           {messages.map((message, index) => {
             return (

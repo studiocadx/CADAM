@@ -68,9 +68,9 @@ export function ChatTitle() {
               <Input
                 ref={inputRef}
                 className={cn(
-                  'h-8 w-full bg-transparent px-2 text-left text-[17px] font-medium leading-tight tracking-tight text-adam-neutral-10 selection:bg-adam-blue/50 selection:text-white',
-                  'rounded-none border-x-0 border-b-2 border-t-0 border-adam-neutral-500',
-                  'focus:border-adam-neutral-500 focus:outline-none focus:ring-0',
+                  'h-8 w-full bg-transparent px-2 text-left text-[17px] font-medium leading-tight tracking-tight text-cadxstudio-neutral-10 selection:bg-cadxstudio-blue/50 selection:text-white',
+                  'rounded-none border-x-0 border-b-2 border-t-0 border-cadxstudio-neutral-500',
+                  'focus:border-cadxstudio-neutral-500 focus:outline-none focus:ring-0',
                 )}
                 value={titleInput}
                 onChange={(e) => setTitleInput(e.target.value)}
@@ -94,6 +94,7 @@ export function ChatTitle() {
             {...animationProps}
           >
             <div className="flex h-8 w-fit items-center rounded font-medium tracking-tight text-adam-neutral-10 transition-colors duration-200 hover:bg-black hover:text-adam-neutral-0">
+            <div className="flex h-8 w-fit items-center rounded font-medium tracking-tight text-cadxstudio-neutral-10 transition-colors duration-200 hover:bg-black hover:text-cadxstudio-neutral-0">
               <span
                 className={cn(
                   'line-clamp-1 cursor-pointer px-2 text-center text-[17px]',
